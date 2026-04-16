@@ -7,38 +7,45 @@
 </head>
 <body style="font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; line-height: 1.6; padding: 0 16px;">
   <h1>ENSC 833 Project</h1>
-  <h2 style="font-weight: normal;">Machine-Learning Analysis of Recent Internet Outages Using IODA Data</h2>
+  <h2 style="font-weight: normal;">Performance Evaluation of Machine Learning Models Using IODA Data</h2>
   <p><b>Name:</b> Mohid Hasan</p>
   <hr>
 
   <h3>Abstract</h3>
   <p>
-    The Internet Outage Detection and Analysis (IODA) platform provides multi-signal
-    time-series data to monitor large-scale Internet disruptions. Prior work has shown
-    that sliding-window machine-learning methods can detect outage events in selected
-    case studies, but generalization to new outage scenarios remains an open question.
+    Internet anomalies may result from malware outbreaks, infrastructure failures, and
+    conflict-driven connectivity disruptions. Early detection is essential for maintaining
+    network stability, improving cybersecurity visibility, and ensuring resilience during
+    crises. This project evaluates eight machine learning models for anomaly detection
+    using Internet Outage Detection and Analysis (IODA) datasets within a sliding-window
+    framework that captures temporal dependencies.
   </p>
   <p>
-    This project analyzes recent IODA outage events using raw time-series data and
-    evaluates multiple machine-learning models under a consistent sliding-window framework.
-    The goal is to assess robustness across different outage types and identify practical
-    approaches for reliable anomaly detection.
+    Two case studies, Iran and Cuba, are analyzed to represent both severe shutdowns and
+    subtle connectivity degradations. The models are evaluated using ROC-AUC, PR-AUC,
+    Accuracy, F1-score, confusion-matrix-based metrics, Precision, Sensitivity, and
+    training time. Results show that temporal models such as RNN-GRU and RNN-Bi-LSTM
+    provide strong and balanced detection performance, while Broad Learning System variants
+    achieve near-top accuracy with significantly lower training cost, making them suitable
+    for real-time deployment. The results also highlight that outage severity affects
+    detection difficulty and that sliding-window modeling effectively captures temporal
+    disruption patterns.
   </p>
 
-  <h3>Final Report</h3>
-  <p>📄 <a href="#">Download Final Report (PDF)</a> <span style="color:#666;">(placeholder)</span></p>
-
-  <h3>Presentation</h3>
-  <p>🎤 <a href="#">View Presentation Slides (PDF)</a> <span style="color:#666;">(placeholder)</span></p>
+  <h3>Final Deliverables</h3>
+  <p>
+    📄 <a href="report.pdf" target="_blank">Final Report (PDF)</a>
+    <span style="margin-left: 20px;">📊 <a href="presentation.pptx" target="_blank">Final Presentation (PPTX)</a></span>
+  </p>
 
   <h3>References</h3>
   <ol>
     <li>Internet Outage Detection and Analysis (IODA), Georgia Tech Internet Intelligence Lab.</li>
     <li>L. F. Oliveira et al., “Internet outages during times of conflict,” Proc. IEEE SMC, 2024.</li>
-    <li>Z. Li and L. Trajković, “Machine learning for detecting anomalies in communication networks,” IEEE JSAC.</li>
+    <li>Z. Li et al., “Machine learning for anomaly detection.”</li>
   </ol>
 
   <hr>
-  <p style="font-size: 0.9em;">Last updated: <!-- add date --></p>
+  <p style="font-size: 0.9em;">Last updated: April 2026</p>
 </body>
 </html>
